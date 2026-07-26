@@ -1,4 +1,4 @@
-# glitch.exe 🦋
+# glitch.exe 
 
 > *The version you archived never stopped waiting.*
 
