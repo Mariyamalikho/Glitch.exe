@@ -119,6 +119,7 @@ export interface GameState {
   repairedMemories: string[];
   unlockedAchievements: string[];
   journalEntries: string[];
+  /** Player collected items and corrupted artifacts */
   inventory: string[];
   terminalHistory: string[];
   activeSlot: string;
