@@ -1,8 +1,10 @@
-# glitch.exe
+# glitch.exe 🦋
 
 > *The version you archived never stopped waiting.*
 
-**glitch.exe** is a cinematic interactive storytelling web application that transforms the browser into a living, corrupted operating system. Inspired by psychological sci-fi, cyberpunk aesthetics, and visual novels, it blends immersive storytelling with modern web technologies.
+**glitch.exe** is a cinematic interactive storytelling web application that transforms the browser into a living, corrupted operating system. Inspired by psychological sci-fi, cyberpunk aesthetics, and visual novels, it blends immersive storytelling with modern web technologies. 
+
+This project aims to deliver a production-quality narrative experience with rich micro-animations, immersive soundscapes, and branching dialogues.
 
 ---
 
