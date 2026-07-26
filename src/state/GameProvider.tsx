@@ -3,6 +3,10 @@ import { achievements, dialogue, episodes } from '../data/world';
 import type { GameAction, GameState, SaveSlot } from '../types';
 import { clearState, defaultState, loadSlots, loadState, saveSlots, saveState } from './storage';
 
+/**
+ * Global game context holding the entire state of the operating system
+ * and interactive narrative progression.
+ */
 interface GameContextValue {
   state: GameState;
   dispatch: React.Dispatch<GameAction>;
@@ -112,6 +116,10 @@ function reducer(state: GameState, action: GameAction): GameState {
   }
 }
 
+/**
+ * Extracted State Provider component.
+ * Wraps the application to provide global game state access.
+ */
 export function GameProvider({ children }: { children: React.ReactNode }) {
   const [state, dispatch] = useReducer(reducer, undefined, loadState);
   const [slots, setSlots] = useState<SaveSlot[]>(loadSlots);
