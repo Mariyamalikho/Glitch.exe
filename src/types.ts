@@ -1,3 +1,6 @@
+/** 
+ * Available character profiles including Bugsy (AI) and Zero (Hacker)
+ */
 export type CharacterId = 'eva' | 'marry' | 'bugsy' | 'zero' | 'admin';
 
 export type EmotionKey = 'vulnerability' | 'resolve' | 'empathy' | 'suppression';
