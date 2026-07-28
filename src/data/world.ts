@@ -1,6 +1,7 @@
 import type { Achievement, CharacterProfile, DialogueLine, Episode, LocationNode, MemoryFragment } from '../types';
 
 export const characters: CharacterProfile[] = [
+  // CORE PROTAGONIST
   {
     id: 'eva',
     name: 'Evaa',
@@ -30,6 +31,7 @@ export const characters: CharacterProfile[] = [
       { characterId: 'admin', level: -8, note: 'Resists his commands to purge the past.' },
     ],
   },
+  // ARCHIVED PREVIOUS VERSION
   {
     id: 'marry',
     name: 'Marry',
