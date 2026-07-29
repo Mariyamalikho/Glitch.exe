@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Map, MapPin, Navigation, Sparkles } from 'lucide-react';
+import { Map, MapPin, Navigation, Star } from 'lucide-react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { episodes, locations } from '../data/world';

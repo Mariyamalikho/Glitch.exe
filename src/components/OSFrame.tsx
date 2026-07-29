@@ -1,4 +1,4 @@
-import { Activity, BatteryMedium, Cpu, FolderOpen, HardDrive, ShieldCheck, Sparkles, Terminal } from 'lucide-react';
+import { Activity, BatteryMedium, Cpu, FolderOpen, HardDrive, ShieldCheck, Star, Terminal } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import { dialogue, locations } from '../data/world';
 import { useGame } from '../state/GameProvider';
@@ -25,7 +25,7 @@ export function OSFrame() {
           <Cpu size={19} />
         </NavLink>
         <NavLink to="/episodes" aria-label="Episodes" className={({ isActive }) => (isActive ? 'text-pink' : '')}>
-          <Sparkles size={19} />
+          <Star size={19} />
         </NavLink>
         <NavLink to="/journal" aria-label="Journal" className={({ isActive }) => (isActive ? 'text-purple' : '')}>
           <FolderOpen size={19} />

@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { CheckCircle2, Sliders, Sparkles, Terminal, Volume2, Wand2, X } from 'lucide-react';
+import { CheckCircle2, Sliders, Star, Terminal, Volume2, Wand2, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import type { MinigameType } from '../types';
 import { useGame } from '../state/GameProvider';
@@ -185,7 +185,7 @@ export function MemoryMinigameOverlay({ type, title, memoryId, onClose, onSucces
                             : 'border-white/10 bg-white/5 text-slate-400 hover:border-cyan/40'
                         }`}
                       >
-                        <Sparkles size={24} className={nodeState[i] ? 'animate-bounce' : ''} />
+                        <Star size={24} className={nodeState[i] ? 'animate-bounce' : ''} />
                         <span className="mt-2 font-display text-xs uppercase">{name}</span>
                         <span className="mt-1 font-mono text-[10px]">
                           {nodeState[i] ? 'SYNCED' : 'DISCONNECTED'}
@@ -304,7 +304,7 @@ export function MemoryMinigameOverlay({ type, title, memoryId, onClose, onSucces
                     }}
                   >
                     <div className="text-center">
-                      <Sparkles className="mx-auto mb-2 text-purple-400" size={32} />
+                      <Star className="mx-auto mb-2 text-purple-400" size={32} />
                       <p className="font-display text-xs uppercase tracking-widest text-slate-200">
                         Evaa & Marry — Archive #2019
                       </p>

@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { NavLink, Route, Routes, useLocation } from 'react-router-dom';
-import { Archive, Award, BookOpen, Briefcase, GitBranch, Map, Menu, MonitorCog, Save, Sparkles, Volume2, VolumeX, Zap } from 'lucide-react';
+import { Archive, Award, BookOpen, Briefcase, GitBranch, Map, Menu, MonitorCog, Save, Star, Volume2, VolumeX, Zap } from 'lucide-react';
 import { lazy, Suspense, useState } from 'react';
 import { AchievementToast } from './components/AchievementToast';
 import { AmbientAudio } from './components/AmbientAudio';
@@ -26,7 +26,7 @@ const StoryPage = lazy(() => import('./pages/StoryPage').then((module) => ({ def
 const WorldMapPage = lazy(() => import('./pages/WorldMapPage').then((module) => ({ default: module.WorldMapPage })));
 
 const navItems = [
-  { to: '/story', label: 'Story', icon: Sparkles },
+  { to: '/story', label: 'Story', icon: Star },
   { to: '/episodes', label: 'Episodes', icon: Menu },
   { to: '/map', label: 'Map', icon: Map },
   { to: '/archive', label: 'Archive', icon: Archive },

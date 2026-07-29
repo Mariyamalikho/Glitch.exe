@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Shield, Sparkles, User, Volume2 } from 'lucide-react';
+import { Shield, Star, User, Volume2 } from 'lucide-react';
 import { useState } from 'react';
 import { CharacterPortrait } from '../components/CharacterPortrait';
 import { characters } from '../data/world';
@@ -84,7 +84,7 @@ export function ArchivePage() {
                   <Volume2 size={14} className="text-cyan" /> {selectedChar.voiceProfile}
                 </span>
                 <span className="flex items-center gap-1">
-                  <Sparkles size={14} className="text-pink" /> Status: {selectedChar.emotionalState}
+                  <Star size={14} className="text-pink" /> Status: {selectedChar.emotionalState}
                 </span>
               </div>
             </div>
