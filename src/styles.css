@@ -33,6 +33,7 @@ input {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Cyberpunk CRT Scanline Overlay */
 .scanlines {
   background: repeating-linear-gradient(180deg, transparent 0, rgba(255, 255, 255, 0.04) 1px, transparent 3px, transparent 6px);
   mix-blend-mode: screen;
