@@ -3,6 +3,10 @@ import { NavLink } from 'react-router-dom';
 import { dialogue, locations } from '../data/world';
 import { useGame } from '../state/GameProvider';
 
+/**
+ * Base UI shell for the operating system interface.
+ * Renders the persistent dock and status bars.
+ */
 export function OSFrame() {
   const { state } = useGame();
   const line = dialogue[state.currentLineId];
@@ -16,7 +20,7 @@ export function OSFrame() {
   return (
     <>
       {/* Floating OS Dock */}
-      <aside className="os-dock" aria-label="Operating system dock">
+      <aside className="os-dock shadow-[0_0_20px_rgba(49,247,255,0.15)]" aria-label="Operating system dock">
         <NavLink to="/story" aria-label="Story mode" className={({ isActive }) => (isActive ? 'text-cyan' : '')}>
           <Cpu size={19} />
         </NavLink>
@@ -35,7 +39,7 @@ export function OSFrame() {
       </aside>
 
       {/* Top Status Bar */}
-      <div className="os-status">
+      <div className="os-status shadow-[0_0_15px_rgba(255,43,214,0.2)]">
         <span className="flex items-center gap-1.5 font-mono text-[11px] text-cyan">
           <Activity size={13} /> STABILITY: {stability}%
         </span>
