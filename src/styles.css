@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 :root {
+  /* Removed legacy RGB tokens for performance */
   color-scheme: dark;
   font-family: Inter, system-ui, sans-serif;
   background: #05050a;
