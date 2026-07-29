@@ -3,6 +3,10 @@ import { NavLink } from 'react-router-dom';
 import { dialogue, locations } from '../data/world';
 import { useGame } from '../state/GameProvider';
 
+/**
+ * Base UI shell for the operating system interface.
+ * Renders the persistent dock and status bars.
+ */
 export function OSFrame() {
   const { state } = useGame();
   const line = dialogue[state.currentLineId];
