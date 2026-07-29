@@ -38,6 +38,10 @@ const navItems = [
   { to: '/achievements', label: 'Signals', icon: Award },
 ];
 
+/**
+ * Root Application Component.
+ * Handles top-level routing, ambient audio, and global overlays.
+ */
 export function App() {
   const location = useLocation();
   const { state, dispatch } = useGame();
