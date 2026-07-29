@@ -87,6 +87,7 @@ export function App() {
             </nav>
           </header>
         )}
+        {/* Responsive Grid Navigation for Mobile Interface */}
         {!isLanding && (
           <nav className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-5 border-t border-white/10 bg-void/85 backdrop-blur-xl md:hidden">
             {navItems.slice(0, 5).map((item) => (
