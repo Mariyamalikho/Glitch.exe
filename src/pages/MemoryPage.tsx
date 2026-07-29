@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Eye, FileCode, HeadphoneOff, Image as ImageIcon, Star, Wand2 } from 'lucide-react';
+import { Eye, FileCode, HeadphoneOff, Image as ImageIcon, Wand2, Zap } from 'lucide-react';
 import { useState } from 'react';
 import { MemoryMinigameOverlay } from '../components/MemoryMinigameOverlay';
 import { memories } from '../data/world';
@@ -18,7 +18,7 @@ export function MemoryPage() {
       {/* Header */}
       <div className="border-b border-white/10 pb-6">
         <div className="flex items-center gap-3 text-pink">
-          <Star size={24} />
+          <Zap size={24} />
           <h2 className="font-display text-3xl uppercase tracking-wider text-slate-100">MEMORY ARCHIVE</h2>
         </div>
         <p className="mt-2 text-sm text-slate-400 font-mono">

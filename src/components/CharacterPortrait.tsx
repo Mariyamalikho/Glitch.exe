@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Eye, Star, Terminal, UserCheck, Zap } from 'lucide-react';
+import { Eye, Terminal, UserCheck, Zap } from 'lucide-react';
 import { characters } from '../data/world';
 import type { CharacterId } from '../types';
 
@@ -50,7 +50,7 @@ export function CharacterPortrait({ id, mood, size = 'md' }: Props) {
             className="relative flex items-center justify-center"
           >
             <div className="h-28 w-28 rounded-full border-2 border-pink/60 flex items-center justify-center bg-pink/10">
-              <Star size={52} className="text-pink animate-spin-slow" />
+              <Zap size={52} className="text-pink animate-spin-slow" />
             </div>
           </motion.div>
         )}

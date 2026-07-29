@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Star, Terminal, Volume2 } from 'lucide-react';
+import { Terminal, Volume2, Zap } from 'lucide-react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SecretConsole } from '../components/SecretConsole';
@@ -120,7 +120,7 @@ export function LandingPage() {
               type="button"
               className="group relative inline-flex items-center gap-3 overflow-hidden rounded-xl border-2 border-cyan bg-cyan/10 px-10 py-5 font-display text-lg uppercase tracking-[0.25em] text-cyan shadow-neon transition-all hover:bg-cyan hover:text-black hover:shadow-neon-cyan active:scale-95"
             >
-              <Star className="animate-spin-slow" size={22} />
+              <Zap className="animate-spin-slow" size={22} />
               <span>Begin Recovery</span>
               <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
             </button>

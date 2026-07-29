@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { CheckCircle2, Lock, Play, Star } from 'lucide-react';
+import { CheckCircle2, Lock, Play, Zap } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { episodes } from '../data/world';
 import { useGame } from '../state/GameProvider';
@@ -24,7 +24,7 @@ export function EpisodesPage() {
       {/* Header */}
       <div className="border-b border-white/10 pb-6">
         <div className="flex items-center gap-3 text-pink">
-          <Star size={24} />
+          <Zap size={24} />
           <h2 className="font-display text-3xl uppercase tracking-wider text-slate-100">EPISODES ARCHIVE</h2>
         </div>
         <p className="mt-2 text-sm text-slate-400 font-mono">
@@ -80,7 +80,7 @@ export function EpisodesPage() {
                         {isCompleted ? (
                           <CheckCircle2 size={16} className="text-cyan" />
                         ) : isUnlocked ? (
-                          <Star size={14} className="text-yellow-400" />
+                          <Zap size={14} className="text-yellow-400" />
                         ) : (
                           <Lock size={14} className="text-slate-500" />
                         )}
