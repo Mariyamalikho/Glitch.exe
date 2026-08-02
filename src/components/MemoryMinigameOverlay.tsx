@@ -12,6 +12,10 @@ interface Props {
   onSuccess?: () => void;
 }
 
+/**
+ * Base overlay component for all interactive minigames.
+ * Handles mounting/unmounting transitions and core state.
+ */
 export function MemoryMinigameOverlay({ type, title, memoryId, onClose, onSuccess }: Props) {
   const { dispatch } = useGame();
   const [completed, setCompleted] = useState(false);
