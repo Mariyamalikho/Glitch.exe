@@ -11,6 +11,10 @@ const bootLines = [
   'launching corrupted desktop',
 ];
 
+/**
+ * Initial terminal boot sequence overlay.
+ * Displays system mounting and memory checks before desktop load.
+ */
 export function BootSequence() {
   const { state, dispatch } = useGame();
   const [index, setIndex] = useState(0);
