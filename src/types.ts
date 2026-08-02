@@ -18,7 +18,9 @@ export type LocationId =
 
 export type MemoryKind = 'sketch' | 'photo' | 'audio' | 'terminal' | 'corrupt';
 
-export type MinigameType = 'sketch-repair' | 'node-connect' | 'audio-tune' | 'hex-decrypt' | 'photo-lens';
+export type MinigameType = 'memory-nodes' | 'sketch-repair' | 'audio-sync' | 'cipher-decode';
+
+export type MinigameStatus = 'idle' | 'playing' | 'success' | 'failed';
 
 export interface Choice {
   id: string;
