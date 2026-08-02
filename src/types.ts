@@ -3,6 +3,8 @@
  */
 export type CharacterId = 'eva' | 'marry' | 'bugsy' | 'zero' | 'admin';
 
+export type BootPhase = 'initializing' | 'mounting' | 'checking' | 'ready';
+
 export type EmotionKey = 'vulnerability' | 'resolve' | 'empathy' | 'suppression';
 
 export type LocationId =
