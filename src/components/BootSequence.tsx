@@ -25,6 +25,7 @@ export function BootSequence() {
       setIndex((value) => {
         if (value >= bootLines.length - 1) {
           window.clearInterval(timer);
+          // Trigger glitch transition effect
           window.setTimeout(() => dispatch({ type: 'SET_BOOTED', booted: true }), 520);
           return value;
         }
