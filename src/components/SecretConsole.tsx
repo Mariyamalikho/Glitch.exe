@@ -8,6 +8,10 @@ interface Props {
   onClose: () => void;
 }
 
+/**
+ * Secret developer terminal overlay.
+ * Supports lore commands, diagnostics, and debugging.
+ */
 export function SecretConsole({ open, onClose }: Props) {
   const { state, dispatch } = useGame();
   const [input, setInput] = useState('');
