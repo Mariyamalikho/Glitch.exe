@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Terminal, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { useGame } from '../state/GameProvider';
+import { AVAILABLE_COMMANDS } from '../utils/commands';
 
 interface Props {
   open: boolean;
