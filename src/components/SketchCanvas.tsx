@@ -8,7 +8,7 @@ export function SketchCanvas() {
 
   return (
     <div className="sketch-container flex justify-center items-center p-4">
-      <canvas ref={canvasRef} className="sketch-canvas border border-cyan/30" />
+      <canvas ref={canvasRef} className="sketch-canvas border border-cyan/30 touch-none" />
     </div>
   );
 }
