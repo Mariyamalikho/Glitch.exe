@@ -48,6 +48,11 @@ input {
   backdrop-filter: blur(18px);
 }
 
+/* Retro Terminal Aesthetic */
+.terminal-glow {
+  text-shadow: 0 0 5px rgba(49, 247, 255, 0.5);
+}
+
 /* Sketch Minigame Canvas */
 .sketch-canvas {
   box-shadow: 0 0 15px rgba(49, 247, 255, 0.2);
