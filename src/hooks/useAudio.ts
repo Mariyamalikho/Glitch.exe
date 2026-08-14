@@ -8,6 +8,7 @@ export function useAudio() {
 
   useEffect(() => {
     // Audio engine initialization logic will go here
+    // Ensure AudioContext resumes on first user interaction to bypass autoplay policies
   }, []);
 
   return { isMuted };
