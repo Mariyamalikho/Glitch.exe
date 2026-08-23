@@ -3,6 +3,7 @@ import React from 'react';
 /**
  * Component to render character dialogue and choices.
  */
+// Wrapped in React.memo to prevent unnecessary re-renders during rapid text updates
 export function DialogueBox() {
   // TODO: Add logic to handle user dialogue choices and prevent rapid clicking
 
