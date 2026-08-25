@@ -180,6 +180,7 @@ export function SecretConsole({ open, onClose }: Props) {
               <button
                 type="button"
                 onClick={onClose}
+                aria-label="Close terminal"
                 className="rounded p-1 text-slate-400 hover:bg-white/10 hover:text-white"
               >
                 <X size={18} />
