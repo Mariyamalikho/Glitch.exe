@@ -60,6 +60,12 @@ input {
   cursor: crosshair;
 }
 
+@media (max-width: 768px) {
+  .sketch-container {
+    padding: 0.5rem;
+  }
+}
+
 /* Terminal boot screen overlay */
 .boot-screen {
   position: fixed;
