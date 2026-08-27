@@ -5,6 +5,9 @@ import { App } from './App';
 import { GameProvider } from './state/GameProvider';
 import './styles.css';
 
+// TODO: Initialize Vercel Analytics for production tracking
+// import { Analytics } from '@vercel/analytics/react';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
