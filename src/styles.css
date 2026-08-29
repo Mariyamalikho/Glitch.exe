@@ -51,7 +51,7 @@ input {
 /* Retro Terminal Aesthetic */
 .terminal-glow {
   /* Enhanced glow for readability */
-  text-shadow: 0 0 6px rgba(49, 247, 255, 0.6);
+  text-shadow: 0 0 8px rgba(49, 247, 255, 0.8);
 }
 
 /* Sketch Minigame Canvas */
