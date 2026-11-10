@@ -310,7 +310,7 @@ export function MemoryMinigameOverlay({ type, title, memoryId, onClose, onSucces
                     <div className="text-center">
                       <Zap className="mx-auto mb-2 text-purple-400" size={32} />
                       <p className="font-display text-xs uppercase tracking-widest text-slate-200">
-                        Evaa & Marry — Archive #2019
+                        Evaa & Marry // Archive #2019
                       </p>
                     </div>
                   </div>

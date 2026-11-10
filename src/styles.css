@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* Removed legacy RGB tokens for performance */
+  /* High-performance dark void color tokens */
   color-scheme: dark;
-  font-family: Inter, system-ui, sans-serif;
-  background: #05050a;
+  font-family: 'Rajdhani', system-ui, sans-serif;
+  background: #040408;
 }
 
 body {
   margin: 0;
   min-width: 320px;
-  background: #05050a;
+  background: #040408;
+  font-family: 'Rajdhani', system-ui, sans-serif;
 }
 
 .cursor-layer,
@@ -88,21 +89,24 @@ input {
 }
 
 .boot-loader {
-  width: min(100%, 360px);
-  height: 6px;
+  width: min(100%, 380px);
+  height: 12px;
   margin-top: 1rem;
   overflow: hidden;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(34, 211, 238, 0.4);
+  border-radius: 2px;
+  background: rgba(5, 5, 12, 0.9);
+  padding: 2px;
 }
 
 .boot-loader::before {
   content: '';
   display: block;
-  width: 45%;
+  width: 60%;
   height: 100%;
-  background: linear-gradient(90deg, #31f7ff, #ff2bd6, #baff29);
-  animation: float 1.2s ease-in-out infinite;
+  background: repeating-linear-gradient(90deg, #22d3ee 0 8px, transparent 8px 10px);
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.6);
+  animation: scan 2s linear infinite;
 }
 
 .os-dock {
@@ -145,12 +149,13 @@ input {
   transform: translateX(-50%);
   align-items: center;
   gap: 0.7rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 999px;
-  padding: 0.45rem 0.75rem;
-  background: rgba(0, 0, 0, 0.52);
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  border-radius: 2px;
+  padding: 0.35rem 0.75rem;
+  background: rgba(4, 6, 14, 0.88);
   backdrop-filter: blur(16px);
   color: #cbd5e1;
+  font-family: 'Share Tech Mono', monospace;
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -236,22 +241,49 @@ input {
   background: rgba(255, 43, 214, 0.08);
 }
 
-.primary-cta,
+.primary-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid #22d3ee;
+  border-radius: 2px;
+  padding: 0.8rem 1.4rem;
+  font-family: Orbitron, 'Share Tech Mono', monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #040408;
+  background: #22d3ee;
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.4);
+  transition: all 150ms ease;
+}
+
+.primary-cta:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 32px rgba(255, 255, 255, 0.65);
+}
+
 .secondary-cta {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  border: 1px solid rgba(49, 247, 255, 0.58);
-  padding: 0.9rem 1.2rem;
-  font-weight: 800;
-  color: #061016;
-  background: linear-gradient(90deg, #31f7ff, #ff2bd6);
-  box-shadow: 0 0 34px rgba(49, 247, 255, 0.36);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  padding: 0.8rem 1.4rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #e2e8f0;
+  background: rgba(10, 12, 24, 0.7);
+  transition: all 150ms ease;
 }
 
-.secondary-cta {
-  color: #e2e8f0;
-  background: rgba(255, 255, 255, 0.06);
+.secondary-cta:hover {
+  border-color: #22d3ee;
+  color: #22d3ee;
+  background: rgba(34, 211, 238, 0.08);
 }
 
 .glitch-title {

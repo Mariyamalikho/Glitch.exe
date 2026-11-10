@@ -135,8 +135,8 @@ export function SecretConsole({ open, onClose }: Props) {
 
       case 'BUTTERFLY':
         newLogs.push(
-          '🦋 🦋 🦋 BUTTERFLY PROTOCOL ACTIVATED 🦋 🦋 🦋',
-          '  Subconscious healing accelerated.'
+          '[>> BUTTERFLY PROTOCOL ENGAGED // KERNEL HEALING <<]',
+          '  Subconscious recovery matrix accelerated.'
         );
         break;
 
@@ -190,7 +190,7 @@ export function SecretConsole({ open, onClose }: Props) {
             {/* Terminal Body */}
             <div className="flex-1 overflow-y-auto p-4 text-xs space-y-1.5 text-cyan-200">
               {logs.map((log, i) => (
-                <p key={i} className={log.startsWith('>') ? 'text-pink font-bold' : log.includes('SECRET') || log.includes('🦋') ? 'text-yellow-300 font-bold' : ''}>
+                <p key={i} className={log.startsWith('>') ? 'text-pink font-bold' : log.includes('SECRET') || log.includes('BUTTERFLY') ? 'text-yellow-300 font-bold' : ''}>
                   {log}
                 </p>
               ))}
