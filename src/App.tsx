@@ -51,7 +51,7 @@ export function App() {
   return (
     <ErrorBoundary>
       <div className={`min-h-screen overflow-x-hidden bg-void text-slate-100 selection:bg-cyan/30 ${state.settings.highContrast ? 'high-contrast' : ''} ${state.settings.cursorFx ? 'cursor-layer' : ''}`}>
-        <div className="fixed inset-0 pointer-events-none bg-[radial-gradient(circle_at_25%_20%,rgba(49,247,255,.18),transparent_28%),radial-gradient(circle_at_80%_10%,rgba(255,43,214,.16),transparent_26%),linear-gradient(180deg,#05050a,#090817_55%,#05050a)]" />
+        <div className="fixed inset-0 pointer-events-none bg-[radial-gradient(circle_at_25%_20%,rgba(34,211,238,0.12),transparent_35%),linear-gradient(180deg,#040408,#060814_55%,#020205)]" />
         {!isLanding && <OSFrame />}
         <div className="scanlines pointer-events-none fixed inset-0 z-50 opacity-30" />
         {!isLanding && (

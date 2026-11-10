@@ -253,23 +253,23 @@ export const episodes: Episode[] = [
 ];
 
 export const memories: MemoryFragment[] = [
-  { id: 'm-room', title: 'White Room Polaroid', kind: 'photo', location: 'white-room', body: 'A bed, a monitor, and a small glass handprint that glows warm when touched.', image: 'linear-gradient(135deg,#f8fbff,#22D3EE 45%,#050506)', minigame: 'photo-lens' },
+  { id: 'm-room', title: 'White Room Polaroid', kind: 'photo', location: 'white-room', body: 'A bed, a monitor, and a small glass handprint that glows warm when touched.', image: 'linear-gradient(135deg,#070b19,#22D3EE 45%,#040408)', minigame: 'photo-lens' },
   { id: 'm-sketch', title: 'Corrupted Butterfly Sketch', kind: 'sketch', location: 'neon-city', body: 'A charcoal drawing of a butterfly whose wings are rendered in missing pixel blocks.', minigame: 'sketch-repair' },
   { id: 'm-lullaby', title: 'Marry\'s Audio Log', kind: 'audio', location: 'neon-city', body: 'A damaged humming recording: "Come home before the rain learns your name."', audioFreq: 88, minigame: 'audio-tune' },
-  { id: 'm-hex', title: 'Kernel Root Dump', kind: 'terminal', location: 'archive-core', body: '0x45 0x56 0x41 0x41 -- Identity payload locked behind emotional suppression partition.', hexCode: 'EVAA', minigame: 'hex-decrypt' },
+  { id: 'm-hex', title: 'Kernel Root Dump', kind: 'terminal', location: 'archive-core', body: '0x45 0x56 0x41 0x41 :: Identity payload locked behind emotional suppression partition.', hexCode: 'EVAA', minigame: 'hex-decrypt' },
   { id: 'm-nodes', title: 'Subconscious Relay Nodes', kind: 'corrupt', location: 'reflection-lake', body: 'Disconnected neural wires representing the night Evaa decided to stop feeling.', minigame: 'node-connect' },
-  { id: 'm-sanctuary', title: 'The Unsent Sanctuary Sketch', kind: 'sketch', location: 'final-sanctuary', body: 'Two figures under a paper moon. One is older. One forgives first.', image: 'linear-gradient(135deg,#EC4899,#A855F7 48%,#22D3EE)' },
+  { id: 'm-sanctuary', title: 'The Unsent Sanctuary Sketch', kind: 'sketch', location: 'final-sanctuary', body: 'Two figures under a paper moon. One is older. One forgives first.', image: 'linear-gradient(135deg,#0a1026,#22D3EE 50%,#040408)' },
 ];
 
 export const achievements: Achievement[] = [
-  { id: 'a-start', title: 'First Boot', category: 'story', description: 'Woke up inside Echo Grid.', icon: '⚡' },
-  { id: 'a-marry', title: 'Do Not Delete Her', category: 'link', description: 'Chose to trust Marry\'s drawing.', icon: '🦋' },
-  { id: 'a-bugsy', title: 'Patch Notes For The Soul', category: 'link', description: 'Unlocked Bugsy\'s secret maintenance logs.', icon: '👁️' },
-  { id: 'a-reconstructed', title: 'Memory Architect', category: 'secret', description: 'Reconstructed a corrupted memory fragment.', icon: '🧩' },
-  { id: 'a-terminal', title: 'Cipher Breaker', category: 'terminal', description: 'Executed hidden terminal commands.', icon: '💻' },
-  { id: 'a-act1', title: 'Initialization Complete', category: 'story', description: 'Completed Act I: Corrupted Initialization.', icon: '🔮' },
-  { id: 'a-act2', title: 'Subconscious Unbound', category: 'story', description: 'Completed Act II: Subconscious Fragmentation.', icon: '🪞' },
-  { id: 'a-sanctuary', title: 'Compiled Self', category: 'secret', description: 'Reached the Final Sanctuary and embraced Marry.', icon: '✨' },
+  { id: 'a-start', title: 'First Boot', category: 'story', description: 'Woke up inside Echo Grid.', icon: 'SYS_BOOT' },
+  { id: 'a-marry', title: 'Do Not Delete Her', category: 'link', description: 'Chose to trust Marry\'s drawing.', icon: 'MARRY_CORE' },
+  { id: 'a-bugsy', title: 'Patch Notes For The Soul', category: 'link', description: 'Unlocked Bugsy\'s secret maintenance logs.', icon: 'BUGSY_LOG' },
+  { id: 'a-reconstructed', title: 'Memory Architect', category: 'secret', description: 'Reconstructed a corrupted memory fragment.', icon: 'MEM_RECON' },
+  { id: 'a-terminal', title: 'Cipher Breaker', category: 'terminal', description: 'Executed hidden terminal commands.', icon: 'CIPHER_EXEC' },
+  { id: 'a-act1', title: 'Initialization Complete', category: 'story', description: 'Completed Act I: Corrupted Initialization.', icon: 'ACT1_SYNC' },
+  { id: 'a-act2', title: 'Subconscious Unbound', category: 'story', description: 'Completed Act II: Subconscious Fragmentation.', icon: 'ACT2_SYNC' },
+  { id: 'a-sanctuary', title: 'Compiled Self', category: 'secret', description: 'Reached the Final Sanctuary and embraced Marry.', icon: 'SANCTUARY' },
 ];
 
 export const dialogue: Record<string, DialogueLine> = {
